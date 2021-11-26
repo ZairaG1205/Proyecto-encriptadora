@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family:'Indie Flower', cursive;
+}
+header{
+    padding: 0.5rem 1rem;
+    background-color:rgb(255, 204, 204);
+}
+footer{
+    padding: 0.5rem 1rem;
+    background-color:rgb(255, 204, 204);
+    text-align: center;
+}
+main{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedor{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+#mensaje{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding: 2rem;
+    width: 70%;
+    padding-left: 10rem; padding-right: 10rem;
+    
+}
+#mensaje > *{
+    width:100%;
+}
+.grupo{
+    display: flex;
+    justify-content: space-between;
+}
+label{
+    margin-bottom: 0.5rem;
+    font-family:'Indie Flower', cursive;
+}
+span{
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    text-align: end;
+}   
+textarea{
+    resize: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    height: 12rem;
+    width: 30rem;
+    display: flex;
+    margin-bottom: 1.3rem;
+    background-color:floralwhite;
+    border: 0.30rem solid rgb(181, 234, 234);
+}
+textarea:focus-visible{
+    outline: none;
+    box-shadow: 0 0 0.5rem rgb(132, 233, 233);
+}
+input[type="number"] {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: center;
+    background-color:floralwhite;
+    border: 0.15rem solid rgb(181, 234, 234);
+    border-radius: 10px;
+    padding: 0.5rem 0.5rem;
+    margin-bottom: 1.3rem;
+    width: 70%;
+}
+input[type="number"]:focus-visible{
+    outline: none;
+    box-shadow: 0 0 0.5rem rgb(137, 228, 228);
+}
+button{
+    font-family:'Indie Flower', cursive;
+    font-weight: 700;
+    font-size: 0.75rem;
+    cursor: pointer;
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    background-color: rgb(181, 234, 234);
+    border: none;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    width: 49%;
+    font-size: 0.9rem;
+}
+#mensajeresultado{
+    padding-bottom: 2rem;
+}
+button#copiar{
+    border-radius: 10px;
+    width: 100%;
+    padding-left: 2rem;
+}
+

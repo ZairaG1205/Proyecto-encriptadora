@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Encriptadora</title>
+    <link rel="icon" href="https://images.emojiterra.com/google/android-oreo/512px/1f48c.png">
+    <link rel="stylesheet" href="Assets/css/mensaje.css">
+</head>
+<body background="https://i.gifer.com/3AE8.gif">
+<header>
+    <h1>Cupir♡s L♥️ve</h1>
+</header> 
+    <main>
+        <section class="contenedor">
+            <div id="mensaje">
+                <label for="obtener"><b>Mensaje secreto</b></label>
+                <textarea id="msj" name="textarea" maxlength="280" placeholder="Escribe tu mensaje aquí"></textarea>
+                <span id="cantidad">0/280</span>
+                <label for="obtener"><b>Clave secreta</b></label>
+                <input id="obtener" type="number" min="0" max="30" placeholder="Ingresa tu clave secreta" name="obtener" step="1">
+                <div class="grupo">
+                    <button id="cifrar" name="cifrar" type="button">
+                        <i class="lock"></i> Cifrar
+                      </button>
+                      <button id="decifrar" name="decifrar" type="button">
+                        <i class="lock-open"></i> Descifrar
+                      </button>
+                </div>
+            </div>
+        </section>
+        <section class="modalcontenedor">
+            <label for="mensajeresultado" id="resultado"><b>Su mensaje cifrado es</b></label>
+            <div id="mensajeresultado" class="modal">
+                <textarea id="mensajeResultado" name="textarea" readonly></textarea>
+                <button id="copy" name="copy" type="button">
+                <i class="dalecopiate"></i> Copiar
+                </button>
+            </div>
+        </section>
+    </main>
+<footer>
+    <p>⊘ El contenido cuenta con cifrado que puede repercutir en sus emociones</p>
+</footer>
+<script src="Assets/js/encriptar.js" type="module"></script>
+<script src="Assets/js/encriptar2.js" type="module"></script>
+</body> 
+</html>
