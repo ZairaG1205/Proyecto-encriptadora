@@ -1,3 +1,4 @@
+/*codificar*/
 const cifrado = {
     encode(obtener, msj){
       if (msj == ""){ throw new TypeError;}
@@ -9,6 +10,7 @@ const cifrado = {
       }
       return msjEncode;
     },
+/*decodificar*/
     decode(obtener,msj){
       if (msj == ""){ throw new TypeError;}
       obtener *= -1;
@@ -24,12 +26,16 @@ const cifrado = {
   function getLetter(letter, obtener){
 let idLetter = letterValidate(letter);
 let quantityLetter = 26;
+/*cifrar o descifrar caracteres especiales*/
     if(idLetter === 0){ return letter;}
+/* " " numeros*/
     if(idLetter === 48){ quantityLetter = 10;}
+/* " " mayus y mins, numrs*/ 
 let position = (letter - idLetter + obtener) % quantityLetter;
     if(position < 0){ position = quantityLetter + position;}
     return (position + idLetter);
   }
+/*Validar mayus, mins, numrs y carc.espec*/
   function letterValidate(letter){
     let idLetter = 0;
     if(letter >=65 && letter<=90){ idLetter = 65;}

@@ -1,20 +1,20 @@
 import cifrado from './encriptar.js';
-
+/*constantes*/
 const txtmsj = document.getElementById("msj");
 const count = document.getElementById("cantidad");
 const obtener = document.getElementById("obtener");
-const btnCipher = document.getElementById("cifrar");
+const btnCipher = document.getElementById("cifrar");a
 const btnDecipher = document.getElementById("decifrar");
 const resultado = document.getElementById("resultado");
 const txtmensajeResultado = document.getElementById("mensajeResultado");
 const btnCopy = document.getElementById("copy");
 const modalC = document.getElementsByClassName("modalcontenedor")[0];
 const modal = document.getElementsByClassName("modal")[0];
-
+/*limitar caracteres*/
 txtmsj.addEventListener("keyup", () =>{
     count.innerHTML = txtmsj.value.length + "/280";
 });
-
+/*funcion cifrar*/
 btnCipher.addEventListener("click",()=>{
     if(txtmsj.value == ""){
         alert("No olvides escribir tu mensaje secreto.");
@@ -26,7 +26,7 @@ btnCipher.addEventListener("click",()=>{
         txtmensajeResultado.innerHTML = mensajeresultado;
     }
 });
-
+/*funcion descifrar*/
 btnDecipher.addEventListener("click",()=>{
     if(txtmsj.value == ""){
         alert("No olvides escribir tu mensaje secreto.");
@@ -38,6 +38,7 @@ btnDecipher.addEventListener("click",()=>{
         txtmensajeResultado.innerHTML = mensajeResultado;
     }
 });
+/*copiar*/
 btnCopy.addEventListener("click",()=>{
     txtmensajeResultado.select();
     document.execCommand("copy");
