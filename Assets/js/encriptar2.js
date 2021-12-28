@@ -3,14 +3,14 @@ import cifrado from './encriptar.js';
 const txtmsj = document.getElementById("msj");
 const count = document.getElementById("cantidad");
 const obtener = document.getElementById("obtener");
-const btnCipher = document.getElementById("cifrar");a
+const btnCipher = document.getElementById("cifrar");
 const btnDecipher = document.getElementById("decifrar");
 const resultado = document.getElementById("resultado");
 const txtmensajeResultado = document.getElementById("mensajeResultado");
 const btnCopy = document.getElementById("copy");
 const modalC = document.getElementsByClassName("modalcontenedor")[0];
 const modal = document.getElementsByClassName("modal")[0];
-/*limitar caracteres*/
+
 txtmsj.addEventListener("keyup", () =>{
     count.innerHTML = txtmsj.value.length + "/280";
 });
